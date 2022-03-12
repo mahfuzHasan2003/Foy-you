@@ -71,7 +71,8 @@
    <div class="parent-div">
       <div id="first-page" class="middle-center"> 
          <div>
-            <h1>কেমন আছেন ম্যাম?</h1>
+            <p style="color: black;"><span style="background-color: yellow; padding: 2px 5px;">Good morning, princess!</span> </p>
+            <h1>কেমন আছো?</h1>
             <button onclick="forValo()" class="button">ভালো 😊</button>
             <button onclick="forValoNa()" class="button">ভালো না 🥺</button>
          </div>
@@ -116,7 +117,7 @@
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="5.jpg">
+            <img class="card-img-top" src="4.jpg">
             <div class="card-body">
               <p class="card-text">I will be your last love, I will stay till the end<br> আমি তোমার শেষের প্রেম হবো, থেকে যাবো শেষ অবধি।🌸</p>
             </div>
@@ -124,6 +125,29 @@
       </div>
    </div>
    
-   <script src="script.js"></script>
+   <script>
+      const firstPage = document.getElementById("first-page");
+      const valoNa = document.getElementById("valo-na");
+      const valo = document.getElementById("valo");
+      const dekhboNa = document.getElementById("dekhbo-na")
+      const dekhbo = document.getElementById("dekhbo");
+
+      function forValoNa(){
+         firstPage.style.display = "none";
+         valoNa.style.display = "block";
+      }
+      function forValo(){
+         valo.style.display = "block";
+         firstPage.style.display = "none";
+      }
+      function forDekhboNa(){
+         dekhboNa.style.display = "block";
+         valo.style.display = "none";
+      }
+      function forDekhbo(){
+         dekhbo.style.display = "block";
+         valo.style.display = "none";
+      }
+   </script>
 </body>
 </html>
