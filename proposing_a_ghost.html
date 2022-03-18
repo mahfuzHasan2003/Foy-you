@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ডাইনিকে প্রোপজ</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Noto+Sans+Bengali:wght@300&display=swap" rel="stylesheet">
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      .container{
+         width: 100%;
+         height: 100vh;
+         background-color: #353839;
+         background: rgba(0, 0, 0, 0.8)url("newOne.jpeg");
+         background-blend-mode: darken;
+         background-size: cover;
+         color: white;
+         font-family: 'Fredoka', sans-serif;
+         font-family: 'Noto Sans Bengali', sans-serif;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: large;
+         letter-spacing: 2px;
+      }
+      p{
+         font-weight: 500;
+      }
+      span{
+         color: yellow;
+      }
+   </style>
+</head>
+<body>
+   
+   <div class="container">
+      <p>Aytizza, <span class="change_me"></span></p>
+   </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+      var typed = new Typed(".change_me", {
+         strings: ["I Love You!😙", "Will you be my happiness?", "Will you marry me?🥺", "I am always with you!🥰"],
+         typeSpeed: 150,
+         backSpeed: 70
+      });
+
+   </script>
+</body>
+</html>
